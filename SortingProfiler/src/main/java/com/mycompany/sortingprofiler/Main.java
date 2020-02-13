@@ -28,10 +28,10 @@ public class Main{
             array[i] = lista.get(i);
         }
 
-        mySort.selection(array);
+        //mySort.selection(array);
         //Sort.mergeSort(array);
         //Sort.quickSort(array);
         //Sort.radixSort(array);
-        //mySort.bubble(array);
+        mySort.bubble(array);
     }
 }
