@@ -3,33 +3,35 @@ import org.junit.Test;
   
 public class TestSort {  
   
+    int[] a ={3,7,3,1,9,6,1,2};
+
     @Test  
     public void selection(){  
         Sort mySort = new Sort();
-        assertEquals([1,1,2,3,3,6,7,9],mySort.selection([3,7,3,1,9,6,1,2]));
+        assertNull(mySort.selection(a));
     } 
     
     @Test  
     public void mergesort(){  
         Sort mySort = new Sort();
-        assertEquals([1,1,2,3,3,6,7,9],mySort.mergesort([3,7,3,1,9,6,1,2]));
+        assertNull(Sort.mergeSort(a));
     } 
 
     @Test  
     public void quicksort(){  
         Sort mySort = new Sort();
-        assertEquals([1,1,2,3,3,6,7,9],mySort.quicksort([3,7,3,1,9,6,1,2]));
+        assertNull(Sort.quickSort(a));
     } 
 
     @Test  
     public void radixsort(){  
         Sort mySort = new Sort();
-        assertEquals([1,1,2,3,3,6,7,9],mySort.radixsort([3,7,3,1,9,6,1,2]));
+        assertNull(Sort.radixSort(a));
     } 
 
     @Test  
     public void bubble(){  
         Sort mySort = new Sort();
-        assertEquals([1,1,2,3,3,6,7,9],mySort.bubble([3,7,3,1,9,6,1,2]));
+        assertNull(mySort.bubble(a));
     } 
 }  
