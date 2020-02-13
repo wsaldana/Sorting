@@ -18,18 +18,20 @@ public class Main{
         Generator gen = new Generator();
         gen.create();
 
+        //Creacion de objeto Sort para accesar a sus metodos
         Sort mySort = new Sort();
 
         List<Integer> lista = new ArrayList<Integer>();
         lista = gen.leer();
-
         int[] array = new int[lista.size()];
         for(int i=0; i<array.length;i++){
             array[i] = lista.get(i);
         }
-        //mySort.selection(array);
-        //mySort.merge(array,)
 
-    
+        mySort.selection(array);
+        //Sort.mergeSort(array);
+        //Sort.quickSort(array);
+        //Sort.radixSort(array);
+        //mySort.bubble(array);
     }
 }

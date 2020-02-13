@@ -60,14 +60,16 @@ public class Sort{
         merge(data,temp,low,middle,high);
     }
 
-    public static void mergeSort(int data[], int n){
+    public static void mergeSort(int data[]){
+        int n = data.length;
         mergeSortRecursive(data,new int[n],0,n-1);
     }
 
 
     //----------------------------------------------------
 
-    public static void quickSort(int data[], int n){
+    public static void quickSort(int data[]){
+        int n = data.length;
         quickSortRecursive(data,0,n-1);
     }
 
