@@ -3,7 +3,7 @@ import org.junit.Test;
   
 public class TestSort {  
   
-    int[] a ={3,7,3,1,9,6,1,2};
+    Comparable[] a ={3,7,3,1,9,6,1,2};
 
     @Test  
     public void selection(){  

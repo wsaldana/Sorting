@@ -4,7 +4,7 @@
  * Clase que genera 3000 numeros aleatorios y los almacena en un archivo de texto
  */
 
- import java.io.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -46,8 +46,8 @@ import java.util.Random;
         }
      }
 
-     public ArrayList<Integer> leer(){
-        ArrayList<Integer> arreglo = new ArrayList<Integer>();
+     public ArrayList<String> leer(){
+        ArrayList<String> arreglo = new ArrayList<String>();
          try {
             File file = new File("datos.txt");
             FileInputStream fis = new FileInputStream(file);
@@ -55,7 +55,7 @@ import java.util.Random;
             BufferedReader br = new BufferedReader(isr);
             String line;
             while((line = br.readLine()) != null){
-                arreglo.add(Integer.parseInt(line));
+                arreglo.add(line);
                 //System.out.println(line);
             }
             br.close();
